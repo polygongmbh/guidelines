@@ -27,7 +27,10 @@ start from a shared seed and layer topic-specific fragments on top.
 Global Claude Code config consumes this repo without copying it:
 `~/.claude/CLAUDE.md` tells the agent to seed every new `CLAUDE.md` (incl. `/init`) from the template,
 and a `SessionStart` hook (`~/.claude/hooks/seed-claude-md.sh`) injects the same pointer
-whenever a git project has no `CLAUDE.md`.
+whenever a git project has no `CLAUDE.md`,
+naming the fragments that match the detected stack
+(e.g. `ts.md` when a `tsconfig.json` or `.ts` file exists).
+When adding a `<topic>.md`, add its detection line to the hook.
 Both locate the repo via `$PROJECTS/guidelines`,
 so the checkout can live at a different path on each device.
 

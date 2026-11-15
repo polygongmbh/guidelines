@@ -38,3 +38,7 @@ so the checkout can live at a different path on each device.
 
 - One topic per fragment file (`<topic>.md`); one fact, one home.
 - Keep it short — invariants and discipline, not manuals.
+
+## License
+
+[GPL-3.0-or-later](LICENSE).

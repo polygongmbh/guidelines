@@ -66,7 +66,7 @@ and the ONE doc to read before changing behavior.
 One line per layer: directory, job, key file to read.
 A map, not a manual — depth lives in docs/.»
 
-## Invariants (do not "simplify" away)   ← «FILL AS DECISIONS LAND»
+## Invariants   ← «FILL AS DECISIONS LAND»
 
 «Rules a well-meaning refactor would break.
 Each with a one-line why + a `docs/` pointer where relevant.»
@@ -77,3 +77,5 @@ Each with a one-line why + a `docs/` pointer where relevant.»
 - **One fact, one home**: each topic owned by exactly one doc;
   narrative docs (history, status, plans) link into it, never restate it.
 - **Delete plan docs once shipped** — don't leave a stale third copy.
+- Before editing any `.md` file, read its first three lines — heading, scope, neighbors — keep them true in the same edit,
+  put what the scope excludes where the neighbors point, and keep file-describing prose to those lines.
